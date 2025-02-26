@@ -1,5 +1,5 @@
 {
-  "name": "node_express_multi_file_uploader",
+  "name": "node_express_multi_file_upload",
   "version": "1.0.0",
   "description": "Node|Express|Vanilla JS form for multi files upload.",
   "main": "server.js",
