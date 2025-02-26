@@ -1,9 +1,5 @@
-# "Node.js File Upload API with Express"
+# "Node.js File Upload example with Express.js"
 
----
-
-
----
 
 ### Description
 

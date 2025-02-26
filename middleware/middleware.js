@@ -1,5 +1,5 @@
 const path = require("path")
-const MB = 5; // 5 MB 
+const MB = 10; // 10 MB 
 const FILE_SIZE_LIMIT = MB * 1024 * 1024;
 
 const fileSizeLimiter = (req, res, next) => {

@@ -1,32 +1,32 @@
 const form = document.getElementById('uploadForm')
 
-        const sendFiles = async () => {
-            // Object 
-            const myFiles = document.getElementById('myFiles').files
+const sendFiles = async () => {
 
-            const formData = new FormData()
+    const myFiles = document.getElementById('myFiles').files
 
-            Object.keys(myFiles).forEach(key => {
-                formData.append(myFiles.item(key).name, myFiles.item(key))
-            })
+    const formData = new FormData()
 
-            const response = await fetch('http://localhost:8000/upload', {
-                method: 'POST',
-                body: formData
-            })
+    Object.keys(myFiles).forEach(key => {
+        formData.append(myFiles.item(key).name, myFiles.item(key))
+    })
 
-            const json = await response.json()
+    const response = await fetch('http://localhost:8000/upload', {
+        method: 'POST',
+        body: formData
+    })
 
-            const h2 = document.querySelector('h2')
-            h2.textContent = `Status: ${json?.status}`
+    const json = await response.json()
 
-            const h3 = document.querySelector('h3')
-            h3.textContent = json?.message
+    const h2 = document.querySelector('h2')
+    h2.textContent = `Status: ${json?.status}`
 
-            console.log(json)
-        }
+    const h3 = document.querySelector('h3')
+    h3.textContent = json?.message
 
-        form.addEventListener('submit', (e) => {
-            e.preventDefault()
-            sendFiles()
-        })
+    console.log(json)
+}
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    sendFiles()
+})
