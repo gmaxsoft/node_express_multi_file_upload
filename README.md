@@ -44,7 +44,7 @@ textPORT=3000
 UPLOAD_DIR=./uploads
 
 
-### Usage
+## Usage
 
 Start the server:
 bashnpm start
@@ -60,8 +60,8 @@ Upload files:
 Select multiple files in the web form and submit.
 For API usage, send a POST request with the files field containing your files.
 
+## Example
 
-### Example
 Using the Web Form
 
 Navigate to http://localhost:3000.
@@ -76,7 +76,8 @@ Set the request type to multipart/form-data.
 Add a field named files and select multiple files.
 Send the request and check the server response.
 
-### Example Code (Server-Side)
+## Example Code (Server-Side)
+
 javascriptconst express = require('express');
 const multer = require('multer');
 const app = express();
@@ -97,5 +98,6 @@ Make your changes and commit (git commit -m "Add new feature").
 Push to the branch (git push origin feature-branch).
 Create a pull request.
 
-### License
+## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
