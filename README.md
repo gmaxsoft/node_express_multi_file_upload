@@ -1,31 +1,33 @@
-### Node.js | Express.js Multi-File Upload Example
+# Node.js | Express.js Multi-File Upload Example
 
-This is a sample project demonstrating how to implement multiple file uploads in a Node.js application using Express.js. The project showcases a simple server setup to handle file uploads via a web form or API, utilizing popular middleware such as multer for file handling.
-Table of Contents
+This is a sample project demonstrating how to implement multiple file uploads in a Node.js application using Express.js. The project showcases a simple server setup to handle file uploads via a web form or API, utilizing popular middleware such as `multer` for file handling.
 
-Features
-Prerequisites
-Installation
-Usage
-Example
-Contributing
-License
+## Table of Contents
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Example](#example)
+- [Contributing](#contributing)
+- [License](#license)
 
-### Features
+## Features
+- Upload multiple files simultaneously using a web form or API.
+- Built with Node.js and Express.js.
+- Uses `multer` middleware for handling multipart/form-data.
+- Simple and lightweight example for learning purposes.
 
-Upload multiple files simultaneously using a web form or API.
-Built with Node.js and Express.js.
-Uses multer middleware for handling multipart/form-data.
-Simple and lightweight example for learning purposes.
-
-### Prerequisites
+## Prerequisites
 Before running this project, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (version 14.x or higher recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- A web browser or a tool like [Postman](https://www.postman.com/) for testing the API
 
-Node.js (version 14.x or higher recommended)
-npm (comes with Node.js)
-A web browser or a tool like Postman for testing the API
-
-### Installation
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/gmaxsoft/node_express_multi_file_upload.git
+   cd node_express_multi_file_upload
 
 Clone the repository:
 bashgit clone https://github.com/gmaxsoft/node_express_multi_file_upload.git
@@ -59,7 +61,6 @@ Select multiple files in the web form and submit.
 For API usage, send a POST request with the files field containing your files.
 
 
-
 ### Example
 Using the Web Form
 
@@ -75,7 +76,7 @@ Set the request type to multipart/form-data.
 Add a field named files and select multiple files.
 Send the request and check the server response.
 
-Example Code (Server-Side)
+### Example Code (Server-Side)
 javascriptconst express = require('express');
 const multer = require('multer');
 const app = express();
